@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Registration System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>User Registration Form</h1>
+
+    <form id="registrationForm">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"
+               placeholder="Enter your location" required>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p id="successMessage"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

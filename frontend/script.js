@@ -3,17 +3,11 @@ let form = document.getElementById("registrationForm");
 
 let successMessage = document.getElementById("successMessage");
 
-
-// Hide Success Message When User Starts Typing
-
 form.addEventListener("input", function() {
 
     successMessage.textContent = "";
 
 });
-
-
-// Form Submission
 
 form.addEventListener("submit", function(event) {
 
@@ -27,9 +21,6 @@ form.addEventListener("submit", function(event) {
 
     let location = document.getElementById("location").value;
 
-
-    // Full Name Validation
-
     if (name.trim() === "") {
 
         alert("Please enter your full name");
@@ -37,9 +28,6 @@ form.addEventListener("submit", function(event) {
         return;
 
     }
-
-
-    // Phone Number Validation
 
     let phonePattern = /^[0-9]{10}$/;
 
@@ -51,9 +39,6 @@ form.addEventListener("submit", function(event) {
 
     }
 
-
-    // Email Validation
-
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailPattern.test(email)) {
@@ -64,9 +49,6 @@ form.addEventListener("submit", function(event) {
 
     }
 
-
-    // Location Validation
-
     if (location.trim() === "") {
 
         alert("Please enter your location");
@@ -74,9 +56,6 @@ form.addEventListener("submit", function(event) {
         return;
 
     }
-
-
-    // Display Entered Details in Console
 
     console.log("Name:", name);
 
@@ -86,10 +65,7 @@ form.addEventListener("submit", function(event) {
 
     console.log("Location:", location);
 
-
-    // Display Success Message
-
-    successMessage.textContent = "Registration Successful!";
+    successMessage.textContent = "Registration Successful! 😀";
 
     form.reset();
 
